@@ -1,0 +1,9 @@
+{% if space_object_list %}
+    <ul>
+    {% for obj in space_object_list %}
+        <li><a href="/olios_app/{{ obj.id }}/">{{ obj.name_of_space_object_ino_s1 }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Objects have been launched.</p>
+{% endif %}
